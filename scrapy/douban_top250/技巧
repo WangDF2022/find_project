@@ -1,0 +1,21 @@
+不会给虚拟环境venv
+
+抓取依赖包
+pip freeze > requirements.txt
+
+安装依赖包
+pip install -r requirements.txt
+
+运行爬虫(不显示日志)
+scrapy crawl douban --nolog
+
+pymysql的executemany()方法，在一次数据库的IO操作中，可以插入多条记录。
+在大量数据传输中，它相比于execute()方法，不仅方便，而且提高了效率。
+
+XPath语法其实只有3大类：
+·层圾：/直接子级、//跳圾
+·属性：@属性访问
+函放：contains()、text()等
+
+for each in response.xpath("//div[@class='li_txt']"):
+context = response.xpath('/html/head/title/text()')
