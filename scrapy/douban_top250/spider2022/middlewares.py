@@ -9,8 +9,7 @@ from scrapy import signals,Request
 from itemadapter import is_item, ItemAdapter
 
 def get_cookies_dict():
-    cookies_str = 'bid=HuF5zTbys9o; __utmc=30149280; __utmz=30149280.1656662761.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __gads=ID=86403571e22e4ccf-22c31648ead400f6:T=1656667249:RT=1656667249:S=ALNI_MaAilwwdlQLlj3_mo8kmuIBhF1wJw; dbcl2="191542887:I86QfDWjHd0"; ck=AGNF; push_noty_num=0; push_doumail_num=0; __gpi=UID=000007422abe868e:T=1656667249:RT=1656863881:S=ALNI_MaBDZZjw1c4nEqfRewPpX8vpELPjQ; __utma=30149280.1272050030.1656662761.1656863878.1657019010.8; __utmt_douban=1; __utmb=30149280.1.10.1657019010; ap_v=0,6.0'
-    cookies_dict = {}
+    cookies_str = ''  # 使用自己的cookies
     for item in cookies_str.split('; '):
         key,value = item.split('=',maxsplit=1)
         cookies_dict[key] = value
